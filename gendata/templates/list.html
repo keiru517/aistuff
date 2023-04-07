@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{table}}
+{% endblock %}
+
+{% block content %}
+<h1>{{table}} Table</h1>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<table id="myTable" class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+        <th scope="col">Created</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for dt in data %}
+        <tr>
+            <th scope="row">
+                {{forloop.counter}}
+            </th>
+            <td>
+                {{dt.title}}
+            </td>
+            <td>
+                {{dt.content}}
+            </td>
+            <td>
+                {{dt.created}}
+            </td>
+            <td>
+                <a class="btn btn-warning" href="{% url 'database:editBlog' dt.id %}">Edit</a>
+                <a class="btn btn-danger" href="{% url 'database:deleteBlog' dt.id %}">Delete</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+  </table>   
+  <a href="/database" class="btn btn-primary">Back</a>
+
+{% endblock %} 
