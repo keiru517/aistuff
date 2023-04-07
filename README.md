@@ -1,5 +1,5 @@
-# Google Ads creator with ChatGPT
-Generate Ads and sitelinks with ChatGPT and create Ads
+# Generate RSA Ads in Mins
+Generate RSA Ads with ChatGPT
 
 
 ## Installation
