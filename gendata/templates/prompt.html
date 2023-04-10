@@ -92,7 +92,6 @@
     var columns = [
       {
         field: 'state',
-        // checkbox: true,
         valign: 'middle',
       }
     ]
@@ -167,11 +166,10 @@
     $('#build').click(function () {
       buildTable($table)
     })
-    
+
     $('#table tbody tr').each(function(index) {
       $(this).find('td:nth-child(1)').text(index + 1);
     });
-    
   })
 </script>
 <!-- <script>
