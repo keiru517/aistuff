@@ -50,7 +50,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a {% if request.path == '/gendata/' %}class="nav-link scrollto active"{% else %}class="'nav-link scrollto" {% endif %} href="{% url 'gendata:index' %}">Home</a></li>
-          <li><a {% if request.path == '/gendata/generate_rsa/' %}class="nav-link scrollto active"{% else %}class="'nav-link scrollto" {% endif %} href="{% url 'gendata:generate_rsa' %}">Generate Data</a></li>
+          <li><a {% if request.path == '/gendata/prompt/' %}class="nav-link scrollto active"{% else %}class="'nav-link scrollto" {% endif %} href="{% url 'gendata:prompt' %}">Generate Data</a></li>
           <li><a class="nav-link scrollto" href="#googleAds">Google Ads</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
