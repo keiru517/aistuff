@@ -2415,3 +2415,17 @@ table.dataTable thead .sorting_desc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:before {
   bottom: .5em;
 }
+
+.mobile-preview-frame {
+  border: grey solid;
+  border-width: 70px 20px;
+  border-radius: 50%/6%;
+  height: 840px;
+  margin: 20px;
+  overflow: hidden;
+  border-collapse: separate;
+  font-family: arial, helvetica, sans-serif;
+  width: 440px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
